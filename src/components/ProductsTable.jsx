@@ -12,15 +12,18 @@ export default function ProductsTable() {
 
         return res.data;
       } catch (e) {
-        console.log(e);
+       
       }
     },
   });
 
   if (isLoading) {
     return <div>loading</div>;
+    
   } else if (isError) {
-    return toast.error(`${error.message}`)
+    
+     toast.error(`${error.message}`)
+     return <></>
   } else {
     return (
       <table>

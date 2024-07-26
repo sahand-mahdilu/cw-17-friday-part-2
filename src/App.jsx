@@ -4,13 +4,15 @@ import "react-toastify/dist/ReactToastify.css";
 
 import "./App.css";
 import ProductsTable from "./components/ProductsTable";
+import NewProduct from "./components/NewProduct";
 
 function App() {
-  const notify = () => toast("Wow so easy!");
+  
 
   return (
     <>
       <ProductsTable />
+      <NewProduct/>
       <ToastContainer />
     </>
   );
